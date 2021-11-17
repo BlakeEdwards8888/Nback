@@ -8,7 +8,7 @@ namespace Nestre.UI
     public class Validator : MonoBehaviour
     {
         [SerializeField] Sprite passIcon, failIcon;
-        [SerializeField] AudioClip passSfx, failSfx;
+        [SerializeField] AudioClip passSfx;
 
         Image validationImage;
         AudioSource audioSource;
@@ -26,7 +26,8 @@ namespace Nestre.UI
             gameObject.SetActive(true);
             anim.SetTrigger("Check");
             validationImage.sprite = check ? passIcon : failIcon;
-            audioSource.PlayOneShot(check ? passSfx : failSfx);
+            if (check)
+                audioSource.PlayOneShot(passSfx);
         }
     }
 }

@@ -17,7 +17,6 @@ namespace Nestre.Progression
         [SerializeField] float successfulPercentage;
         [SerializeField] GameOverUI gameOverUI;
         [SerializeField] TimerBar timerBar;
-        [SerializeField] TMP_Text helpText;
 
         int currentDifficulty = 0;
         float totalTurns, correctTurns;
@@ -76,7 +75,7 @@ namespace Nestre.Progression
                 //progress to next level
                 currentDifficulty++;
 
-                helpText.SetText($"Does this match {currentDifficulty + 1} shapes back?");
+                //helpText.SetText($"Does this match {currentDifficulty + 1} shapes back?");
 
                 timerBar.SetActiveState(true);
                 onDifficultyIncreased?.Invoke();
