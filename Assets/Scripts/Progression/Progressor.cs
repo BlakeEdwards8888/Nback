@@ -13,6 +13,7 @@ namespace Nestre.Progression
 
         [SerializeField] DifficultyStore difficultyStore;
         [SerializeField] float turnsToProgress;
+        [SerializeField] int maxDifficulty = 4;
         [Range(0,100)]
         [SerializeField] float successfulPercentage;
         [SerializeField] GameOverUI gameOverUI;
@@ -35,7 +36,7 @@ namespace Nestre.Progression
             score += totalTurns > 0 ? Mathf.FloorToInt(successRate) : 0;
             bool succeeded = successRate >= successfulPercentage;
 
-            if (currentDifficulty >= difficultyStore.GetLevels() - 1 || forceFail)
+            if (currentDifficulty == maxDifficulty|| forceFail)
             {
                 timerBar.SetActiveState(false);
                 gameOverUI.Setup(false, score);
@@ -70,26 +71,35 @@ namespace Nestre.Progression
         {
             gameOverUI.Toggle();
 
-            if (currentDifficulty <= difficultyStore.GetLevels())
+            if (currentDifficulty <= maxDifficulty)
             {
                 //progress to next level
                 currentDifficulty++;
 
-                //helpText.SetText($"Does this match {currentDifficulty + 1} shapes back?");
+                foreach(ProgressableEntity progressableEntity in FindObjectsOfType<ProgressableEntity>())
+                {
+                    progressableEntity.Progress();
+                }
 
                 timerBar.SetActiveState(true);
                 onDifficultyIncreased?.Invoke();
             }
         }
 
-        public float GetTimeLimit()
+        public float GetLevel(string tag)
         {
-            return difficultyStore.GetTimeLimit(currentDifficulty);
+            return difficultyStore.GetLevel(tag, currentDifficulty);
         }
 
-        public float GetCurrentDifficulty()
+        public int GetCurrentDifficulty()
         {
             return currentDifficulty;
         }
+
+        public int GetMaxDifficulty()
+        {
+            return maxDifficulty;
+        }
+
     }
 }

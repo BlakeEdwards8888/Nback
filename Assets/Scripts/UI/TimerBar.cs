@@ -6,7 +6,7 @@ using Nestre.Progression;
 
 namespace Nestre.UI
 {
-    public class TimerBar : MonoBehaviour
+    public class TimerBar : MonoBehaviour, IProgressable
     {
         Slider barUI;
         bool isActive = false;
@@ -19,7 +19,6 @@ namespace Nestre.UI
         private void Start()
         {
             ResetTimer();
-            Progressor.instance.onDifficultyIncreased += ResetTimer;
         }
 
         // Update is called once per frame
@@ -42,14 +41,14 @@ namespace Nestre.UI
 
         void ResetTimer()
         {
-            float timeLimit = Progressor.instance.GetTimeLimit();
+            float timeLimit = Progressor.instance.GetLevel("TimeLimit");
             barUI.maxValue = timeLimit;
             barUI.value = timeLimit;
         }
 
-        private void OnDisable()
+        public void Progress()
         {
-            Progressor.instance.onDifficultyIncreased -= ResetTimer;
+            ResetTimer();
         }
     }
 }

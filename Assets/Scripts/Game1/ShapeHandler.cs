@@ -12,13 +12,11 @@ namespace Nestre.Game1
     {
         [SerializeField] GameObject[] shapePrefabs;
         [SerializeField] Transform spawnParent;
-        [SerializeField] int maxLevel;
         [SerializeField] Button[] buttons;
         [SerializeField] TimerBar timerBar;
         [SerializeField] Validator validator;
         [SerializeField] GameObject helpText;
 
-        //int level = 1;
         Progressor progressor;
 
         List<GameObject> activeShapes = new List<GameObject>();
@@ -71,7 +69,7 @@ namespace Nestre.Game1
 
         void CleanActiveShapes()
         {
-            if(activeShapes.Count > maxLevel + 1)
+            if(activeShapes.Count > progressor.GetMaxDifficulty() + 2)
             {
                 GameObject deadShape = activeShapes[activeShapes.Count - 1];
                 activeShapes.Remove(deadShape);
@@ -82,9 +80,9 @@ namespace Nestre.Game1
         //This method is called by the "Same"/"Different" buttons
         public void CheckCurrentShape(bool check)
         {
-            int level = (int)progressor.GetCurrentDifficulty();
+            int level = progressor.GetCurrentDifficulty();
             bool wasCorrect = activeShapes[0].CompareTag(activeShapes[level + 1].tag) == check;
-
+            
             validator.CheckValidation(wasCorrect);
 
             bool finishedLevel = false;

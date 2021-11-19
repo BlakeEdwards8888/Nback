@@ -15,11 +15,11 @@ C:/Users/nompp/Documents/GitHub/Nestre Game 1
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61686
+51578
 Successfully changed project path to: C:/Users/nompp/Documents/GitHub/Nestre Game 1
 C:/Users/nompp/Documents/GitHub/Nestre Game 1
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 42.65 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 42.88 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,240 +35,163 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56512
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002472 seconds.
+Registered in 0.002327 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 41.52 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 40.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.651 seconds
+- Completed reload, in  2.542 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000906 seconds.
+Registered in 0.000886 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 45.01 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 42.76 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.031 seconds
+- Completed reload, in  0.986 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2172 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.2 MB.
-System memory in use after: 99.2 MB.
+Unloading 2174 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.3 MB.
+System memory in use after: 99.3 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2618.
-Total: 2.251600 ms (FindLiveObjects: 0.192200 ms CreateObjectMapping: 0.220500 ms MarkObjects: 1.722700 ms  DeleteObjects: 0.115400 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Fonts
-  artifactKey: Guid(3d74e5d2d106a5a4bb1e7e451c988f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts using Guid(3d74e5d2d106a5a4bb1e7e451c988f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a52213d14db5dce01979aad3d80a8ac') in 0.009184 seconds
-  Import took 0.012433 seconds .
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2620.
+Total: 2.218000 ms (FindLiveObjects: 0.196600 ms CreateObjectMapping: 0.091900 ms MarkObjects: 1.811100 ms  DeleteObjects: 0.117100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.061563 seconds.
-  path: Assets/Fonts/Mulish-VariableFont_wght.ttf
-  artifactKey: Guid(98d7aded63e90a64a92c8de45e40b2d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts/Mulish-VariableFont_wght.ttf using Guid(98d7aded63e90a64a92c8de45e40b2d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870d21635bea53b03ca6ae5edfe905b5') in 0.105784 seconds
-  Import took 0.109458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.320283 seconds.
-  path: Assets/Fonts/Mulish-VariableFont_wght SDF.asset
-  artifactKey: Guid(8f9ce0b845cf41a40a6ef9ae39055419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts/Mulish-VariableFont_wght SDF.asset using Guid(8f9ce0b845cf41a40a6ef9ae39055419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0861aabdda5fe070f16cf23976ae840') in 0.047981 seconds
-  Import took 0.051145 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.554046 seconds.
   path: Assets/Prefabs/Nestre Essentials/UI/Components/Body Text.prefab
   artifactKey: Guid(7a5c00cc44e894a4783923d6fd9dd305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Components/Body Text.prefab using Guid(7a5c00cc44e894a4783923d6fd9dd305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a4fe35139fe353e19f632397ef01a9') in 0.034238 seconds
-  Import took 0.038874 seconds .
+Start importing Assets/Prefabs/Nestre Essentials/UI/Components/Body Text.prefab using Guid(7a5c00cc44e894a4783923d6fd9dd305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77d81d9498dce441d676b7395403872') in 0.093427 seconds
+  Import took 0.096668 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.016916 seconds.
+  Time since last request: 0.502698 seconds.
   path: Assets/Prefabs/Nestre Essentials/UI/Components/Body Text.prefab
   artifactKey: Guid(7a5c00cc44e894a4783923d6fd9dd305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Components/Body Text.prefab using Guid(7a5c00cc44e894a4783923d6fd9dd305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a4fe35139fe353e19f632397ef01a9') in 0.017777 seconds
-  Import took 0.025461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.381867 seconds.
-  path: Assets/Prefabs/Nestre Essentials/UI/Components/Header Text.prefab
-  artifactKey: Guid(db6119235a6d3514882a69b8a9ae15f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Components/Header Text.prefab using Guid(db6119235a6d3514882a69b8a9ae15f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b66e900cd3d709f924033b6ca5e52e55') in 0.014644 seconds
-  Import took 0.018449 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.914020 seconds.
-  path: Assets/Prefabs/Nestre Essentials/UI/Components/Text Button.prefab
-  artifactKey: Guid(5fa6e4ae8b00d68498f6b56a0da00ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Components/Text Button.prefab using Guid(5fa6e4ae8b00d68498f6b56a0da00ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee83e36950089540f8e2ed7374dd5912') in 0.015456 seconds
-  Import took 0.018884 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.577913 seconds.
-  path: Assets/Prefabs/Nestre Essentials/UI/Canvas.prefab
-  artifactKey: Guid(47cf2006ebeeb0848a9f065056e13a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Canvas.prefab using Guid(47cf2006ebeeb0848a9f065056e13a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc5c05157f3de604b3fd2a7419bdb669') in 0.052823 seconds
-  Import took 0.056391 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Prefabs/Nestre Essentials/UI/Pause UI.prefab
-  artifactKey: Guid(36c0a16013e68fc4797200d25674ab95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Pause UI.prefab using Guid(36c0a16013e68fc4797200d25674ab95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e0271fa49fc621915271e08f538aa12') in 0.017327 seconds
-  Import took 0.020557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Prefabs/Nestre Essentials/UI/Intro UI.prefab
-  artifactKey: Guid(bc59db72bf1ad454bbb4ee3afd7c5cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Intro UI.prefab using Guid(bc59db72bf1ad454bbb4ee3afd7c5cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb7c17269fe85c67071747cd19659c7') in 0.028160 seconds
-  Import took 0.031588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Prefabs/Nestre Essentials/UI/Game Over UI.prefab
-  artifactKey: Guid(7d6d75bfff7b812408855850cef27a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Game Over UI.prefab using Guid(7d6d75bfff7b812408855850cef27a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0047f8f90ce967354e8ebcfcb5674c5') in 0.016336 seconds
-  Import took 0.019735 seconds .
+Start importing Assets/Prefabs/Nestre Essentials/UI/Components/Body Text.prefab using Guid(7a5c00cc44e894a4783923d6fd9dd305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a626b899c43a7e189e66b266b0cf2c') in 0.029320 seconds
+  Import took 0.032531 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000933 seconds.
+Registered in 0.000960 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.887 seconds
+- Completed reload, in  0.968 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2154 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.7 MB.
-System memory in use after: 101.7 MB.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.4 MB.
+System memory in use after: 98.4 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2666.
-Total: 2.081700 ms (FindLiveObjects: 0.174500 ms CreateObjectMapping: 0.079200 ms MarkObjects: 1.718900 ms  DeleteObjects: 0.108300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.439977 seconds.
-  path: Assets/Prefabs/Nestre Essentials/UI/Canvas.prefab
-  artifactKey: Guid(47cf2006ebeeb0848a9f065056e13a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Canvas.prefab using Guid(47cf2006ebeeb0848a9f065056e13a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3320a504e9d37bf64b3ba2530fb69f6') in 0.084118 seconds
-  Import took 0.087774 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Prefabs/Nestre Essentials/UI/Countdown Timer.prefab
-  artifactKey: Guid(d16b3fac837a9e54c8c1358846694a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Countdown Timer.prefab using Guid(d16b3fac837a9e54c8c1358846694a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b96172bc0bebbfe935a7bbd75b2c1a6') in 0.014352 seconds
-  Import took 0.017504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Prefabs/Nestre Essentials/UI/Intro UI.prefab
-  artifactKey: Guid(bc59db72bf1ad454bbb4ee3afd7c5cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Nestre Essentials/UI/Intro UI.prefab using Guid(bc59db72bf1ad454bbb4ee3afd7c5cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a915fe00f0c89384a660a8dc66d771b') in 0.011400 seconds
-  Import took 0.014524 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2624.
+Total: 2.469800 ms (FindLiveObjects: 0.220800 ms CreateObjectMapping: 0.079900 ms MarkObjects: 2.067400 ms  DeleteObjects: 0.100800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000902 seconds.
+Registered in 0.000929 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.908 seconds
+- Completed reload, in  0.988 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2154 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.8 MB.
-System memory in use after: 101.8 MB.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.5 MB.
+System memory in use after: 98.5 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2670.
-Total: 2.060900 ms (FindLiveObjects: 0.180800 ms CreateObjectMapping: 0.082500 ms MarkObjects: 1.657000 ms  DeleteObjects: 0.139900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 311.360173 seconds.
-  path: Assets/Art/UI/CountdownRing.png
-  artifactKey: Guid(48efa45a1fd58c340b8db73caa5aa85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/CountdownRing.png using Guid(48efa45a1fd58c340b8db73caa5aa85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d0c0dda52f498bd4d359edea45e792') in 0.062947 seconds
-  Import took 0.066575 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2628.
+Total: 2.130100 ms (FindLiveObjects: 0.225300 ms CreateObjectMapping: 0.081100 ms MarkObjects: 1.724500 ms  DeleteObjects: 0.098200 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Art/UI/pullup.png
-  artifactKey: Guid(01c2dbbd6cfb63041b4b3398223bb690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/pullup.png using Guid(01c2dbbd6cfb63041b4b3398223bb690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747b6950fee3709d561f795bbe113272') in 0.012233 seconds
-  Import took 0.015254 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000996 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.5 MB.
+System memory in use after: 98.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2632.
+Total: 2.297500 ms (FindLiveObjects: 0.300400 ms CreateObjectMapping: 0.141100 ms MarkObjects: 1.755000 ms  DeleteObjects: 0.099300 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Art/UI/ValidationCheck.png
-  artifactKey: Guid(f65d4b444b0a08945b5256161705bc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/ValidationCheck.png using Guid(f65d4b444b0a08945b5256161705bc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53fa4d5e5fa92c83400f941a9a563b2a') in 0.010742 seconds
-  Import took 0.013748 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001065 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.062 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.5 MB.
+System memory in use after: 98.5 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Art/UI/ValidationDash.png
-  artifactKey: Guid(7f8cda94203a61342b0ec4a08c3493ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/ValidationDash.png using Guid(7f8cda94203a61342b0ec4a08c3493ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bbe220534a8e5fcfca4064aca185636') in 0.015268 seconds
-  Import took 0.018565 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2636.
+Total: 3.564100 ms (FindLiveObjects: 0.265700 ms CreateObjectMapping: 0.114900 ms MarkObjects: 3.045900 ms  DeleteObjects: 0.135800 ms)
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

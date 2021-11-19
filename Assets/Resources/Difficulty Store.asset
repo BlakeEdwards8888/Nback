@@ -18,3 +18,11 @@ MonoBehaviour:
   - 45
   - 40
   - 35
+  progressables:
+  - progressionTag: TimeLimit
+    levels:
+    - 60
+    - 50
+    - 45
+    - 40
+    - 35

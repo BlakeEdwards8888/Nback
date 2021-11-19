@@ -6,27 +6,56 @@ using UnityEngine;
 namespace Nestre.Progression
 {
     [CreateAssetMenu(fileName = "Difficulty Store")]
-    public class DifficultyStore: ScriptableObject
+    public class DifficultyStore : ScriptableObject
     {
-        [SerializeField] float[] timeLimits;
-        //[SerializeField] Difficulty[] difficulties;
+        [SerializeField] Progressable[] progressables;
 
-        //[System.Serializable]
-        //struct Difficulty
-        //{
-        //    public float[] timeLimits;
-        //}
+        Dictionary<string, float[]> lookupTable = null;
 
-        public float GetLevels()
+        public float GetLevel(string progressionTag, int difficulty)
         {
-            //return difficulties[difficultyLevel].timeLimits.Length;
-            return timeLimits.Length;
+            BuildLookup();
+
+            if (!lookupTable.ContainsKey(progressionTag))
+            {
+                Debug.LogWarning($"No progression data for {progressionTag}");
+                return 0;
+            }
+
+            float[] levels = lookupTable[progressionTag];
+
+            if(levels.Length == 0)
+            {
+                Debug.LogWarning($"Progression data for {progressionTag} contains no levels");
+                return 0;
+            }
+
+            if(levels.Length < difficulty)
+            {
+                return levels[levels.Length - 1];
+            }
+
+            return levels[difficulty];
         }
 
-        public float GetTimeLimit(int currentDifficulty)
+        void BuildLookup()
         {
-            //return difficulties[currentDifficulty].timeLimits[difficultyLevel];
-            return timeLimits[currentDifficulty];
+            if (lookupTable != null) return;
+
+            lookupTable = new Dictionary<string, float[]>();
+
+            foreach(Progressable progressable in progressables)
+            {
+                lookupTable[progressable.progressionTag] = progressable.levels;
+            }
         }
+
+        [System.Serializable]
+        struct Progressable
+        {
+            public string progressionTag;
+            public float[] levels;
+        }
+
     }
 }

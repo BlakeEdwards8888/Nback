@@ -15,7 +15,7 @@ namespace Nestre.UI
         private void Awake()
         {
             text = GetComponent<TMP_Text>();
-            Progressor.instance.onDifficultyIncreased += () => { UpdateText((int)Progressor.instance.GetCurrentDifficulty() + 1); };
+            Progressor.instance.onDifficultyIncreased += () => { UpdateText(Progressor.instance.GetCurrentDifficulty() + 1); };
         }
 
         public void UpdateText(int insert)
@@ -25,7 +25,7 @@ namespace Nestre.UI
 
         private void OnDisable()
         {
-            Progressor.instance.onDifficultyIncreased += () => { UpdateText((int)Progressor.instance.GetCurrentDifficulty() + 1); };
+            Progressor.instance.onDifficultyIncreased += () => { UpdateText(Progressor.instance.GetCurrentDifficulty() + 1); };
         }
     }
 }

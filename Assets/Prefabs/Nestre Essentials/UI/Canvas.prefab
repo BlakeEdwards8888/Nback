@@ -247,6 +247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intro UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4586450344186353806, guid: bc59db72bf1ad454bbb4ee3afd7c5cf3, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3301666253834237673, guid: 8f9ce0b845cf41a40a6ef9ae39055419, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc59db72bf1ad454bbb4ee3afd7c5cf3, type: 3}
 --- !u!224 &2966807803027381389 stripped
@@ -459,7 +463,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2966807803359444068}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7320438865948012843, guid: 446ae69da4ae00c4189a4cd458022516, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 446ae69da4ae00c4189a4cd458022516, type: 3}
 --- !u!224 &2966807803051555394 stripped
 RectTransform:
